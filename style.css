@@ -18,7 +18,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 1150px;
+  min-height: 1190px;
   margin: 50px;
   background: #fff;
   display: grid;
@@ -95,6 +95,7 @@ body {
   margin: 10px 0;
   cursor: pointer;
   margin-left: 35px;
+  line-height: 1.4;
 }
 
 .contactInfo ul li .icon{
@@ -110,7 +111,7 @@ body {
 }
 
 .contactInfo.education li{
-  margin-bottom: 15px ;
+  margin-bottom: 10px ;
 }
 .contactInfo.education h5{
   color:  #03a9f4;
@@ -128,6 +129,9 @@ body {
   font-weight: 300;
   
 }
+.contactInfo.language{
+  margin-top: 5px;
+}
 
 .contactInfo.language .percent {
   position: relative;
@@ -136,6 +140,7 @@ body {
   display: #081921;
   display: block;
   margin-top: 5px;
+  
 
 }
 
@@ -172,8 +177,145 @@ body {
   letter-spacing: 1px;
   margin-bottom: 10px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
+p{
+  color: #333;
+  margin-left: 20px;
+}
+
+.about .box {
+  display: flex;
+  flex-direction:column;
+  margin: 20px;
+
+
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase ;
+  color: #848c90;
+  font-weight: 600;
+  line-height: 1.4;
+
+}
+
+.about .box .text h5 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+
+}
+
+.about .box ul {
+  margin-left: 20px;
+}
+
+.about.about.skills .box .year_company h5 {
+  text-transform: uppercase ;
+  color: #848c90;
+  font-weight: 600;
+  line-height: 1.4;
+
+}
+
+.about.skills .box .text h5 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+
+}
+
+.about.skills .box ul {
+  margin-left: 20px;
+}
+
+.skills .box{
+  position: relative;
+  width: 100%;
+  
+  
+}
+
+.skills .box h4 {
+  text-transform: uppercase ;
+  color: #848c99;
+  font-weight: 500;
+}
+
+.skills .box .percent{
+  position: relative;
+  width: 90%;
+  height: 10px;
+  background: #f0f0f0;
+
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top:0;
+  left:00;
+  height: 100%;
+  background: #03a9f4 ;
+
+}
+
+.interest ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.interest ul li {
+  list-style: none ;
+  color: #333 ;
+  font-weight: 500;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+.interest ul .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width:20px ;
+}
+
+@media (max-width:1000px){
+  .container{
+    margin: 10px;
+    grid-template-columns: repeat();
+
+  }
+.interest ul{
+  grid-template-columns: repeat();
+}
+
+}
+
+@media (max-width:600px){
+  .about .box {
+    flex-direction: row;
+    
+  }
+  .about .box .year_company{
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .interest ul{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .skill .box{
+    
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.text {
+  line-height: 1.4;
+}
 
 
